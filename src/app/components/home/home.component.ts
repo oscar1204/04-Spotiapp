@@ -14,8 +14,8 @@ export class HomeComponent {
  constructor(private spotifay:SpotifyService){
     this.spotifay.getnewerealeses()
         .subscribe ((data:any)=>{
-          console.log(data.albums.items)
-          this.nuevasCanciones=data.albums.items
+
+          this.nuevasCanciones=data
         });
 }
 }

@@ -10,6 +10,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { ArtistaComponent } from './components/artista/artista.component';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.Routes';
+import { NoimagesPipe } from './pipes/noimages.pipe';
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ROUTES } from './app.Routes';
     SearchComponent,
     HomeComponent,
     NavbarComponent,
-    ArtistaComponent
+    ArtistaComponent,
+    NoimagesPipe,
+    TarjetasComponent
   ],
   imports: [
     BrowserModule,

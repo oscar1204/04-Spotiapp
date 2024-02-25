@@ -16,8 +16,8 @@ buscar(termimo:string){
    console.log(termimo)
    this.sfotify.getartistas(termimo)
        .subscribe((data:any)=>{
-        console.log(data.artists.items)
-        this.artistas= data.artists.items
+
+        this.artistas= data
        })
 }
 
