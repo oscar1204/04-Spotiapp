@@ -9,13 +9,15 @@ import { SpotifyService } from '../../services/spotify.service';
 })
 export class HomeComponent {
 
-  nuevasCanciones:any[]=[]
+  nuevasCanciones:any[]=[];
+  loading:boolean;
 
  constructor(private spotifay:SpotifyService){
-    this.spotifay.getnewerealeses()
+      this.loading=true;
+     this.spotifay.getnewerealeses()
         .subscribe ((data:any)=>{
-
-          this.nuevasCanciones=data
+          this.nuevasCanciones=data;
+          this.loading=false;
         });
 }
 }
